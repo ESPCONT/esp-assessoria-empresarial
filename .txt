@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Assessoria Empresarial</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32; /* Verde */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #388e3c; /* Verde mais escuro */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('banner-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+        }
+
+        .services, .about, .blog, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 10px;
+            background-color: #2e7d32; /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2e7d32; /* Verde */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>ESP Assessoria Empresarial</h1>
+        <p>Seu parceiro estratégico em soluções contábeis</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="banner" id="inicio">
+        <h1>Bem-vindo à ESP Assessoria Empresarial</h1>
+        <p>Especialistas em contabilidade e consultoria fiscal</p>
+        <a href="#contato"><button>Fale Conosco</button></a>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="service-item">
+            <h3>Assessoria Contábil</h3>
+            <p>Oferecemos serviços completos de contabilidade para sua empresa.</p>
+        </div>
+        <div class="service-item">
+            <h3>Consultoria Fiscal</h3>
+            <p>Especialistas em planejamento e otimização fiscal.</p>
+        </div>
+        <div class="service-item">
+            <h3>Abertura de Empresas</h3>
+            <p>Auxiliamos você em todas as etapas para a abertura do seu negócio.</p>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section class="about" id="sobre">
+        <h2>Quem Somos</h2>
+        <p>A ESP Assessoria Empresarial é uma empresa dedicada a fornecer serviços contábeis e de consultoria empresarial com excelência e eficiência.</p>
+    </section>
+
+    <!-- Seção de Blog -->
+    <section class="blog" id="blog">
+        <h2>Últimos Artigos</h2>
+        <p>Mantenha-se atualizado com nossas últimas dicas e notícias sobre contabilidade e gestão empresarial.</p>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 ESP Assessoria Empresarial. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
